@@ -410,7 +410,7 @@ class Sistema { // Classe na qual o programa rodara no entorno
     }
     }
     }
-    fazerAvaliação(){
+    fazerAvaliação(){ // Metodo que acrescenta uma avaliação a um produto  em específico, onde o usuario irá avaliar um produto que tenha pedido anteriormente, o metodo funciona de forma que acrescenta informações a um atributo lista de avaliações que a classe produtos possui
         this.listarProdutos();
         let prodAva = requisicao.question("Digite o produto a ser avaliado: ");
         for (let i = 0; i<this.produtos.length; i++){
@@ -424,7 +424,7 @@ class Sistema { // Classe na qual o programa rodara no entorno
         console.log ("Produto nao encontrado!");
     }
 
-    verAvaliação(){
+    verAvaliação(){ // Metodo que printa todos os produtos disponivéis, nele terá todas as avaliações postas anteriormente no programa.
         console.log (this.listarProdutos());
     }
     
